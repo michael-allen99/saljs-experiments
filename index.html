@@ -13,24 +13,40 @@
 <body>
 
 <section class="mainsection">
-    <h1 class="mainheading">Sal.js is <br>awesome!</h1>
+    <h1 data-sal="slide-up"
+        data-sal-delay="300"
+        data-sal-duration="600"
+        data-sal-easing="ease-in-out"
+        class="mainheading">Sal.js is <br>awesome!</h1>
 </section>
 
 <section class="minisectionleft">
-    <div class="text">
+    <div data-sal="slide-right"
+         data-sal-duration="300"
+         data-sal-easing="ease-in-out"
+         class="text">
         <h3>Keep on scrolling...</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam commodi esse eum fugiat in maxime minima numquam omnis perspiciatis praesentium, repellendus. Deserunt error facilis fugiat, laudantium neque ullam velit.</p>
     </div>
-    <div class="img">
+    <div data-sal="slide-left"
+         data-sal-duration="300"
+         data-sal-easing="ease-in-out"
+         class="img">
         <img src="images/hearts.svg"/>
     </div>
 </section>
 
 <section class="minisectionright">
-    <div class="img">
+    <div data-sal="zoom-in"
+         data-sal-duration="300"
+         data-sal-easing="ease-in-out"
+         class="img">
         <img src="images/cheers.svg"/>
     </div>
-    <div class="text">
+    <div data-sal="zoom-out"
+         data-sal-duration="300"
+         data-sal-easing="ease-in-out"
+         class="text">
         <h3>Keep it going...</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam commodi esse eum fugiat in maxime minima numquam omnis perspiciatis praesentium, repellendus. Deserunt error facilis fugiat, laudantium neque ullam velit.</p>
     </div>
@@ -38,20 +54,32 @@
 </section>
 
 <section class="minisectionleft">
-    <div class="text">
+    <div data-sal="slide-up"
+         data-sal-duration="300"
+         data-sal-easing="ease-in-out"
+         class="text">
         <h3>Almost there...</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam commodi esse eum fugiat in maxime minima numquam omnis perspiciatis praesentium, repellendus. Deserunt error facilis fugiat, laudantium neque ullam velit.</p>
     </div>
-    <div class="img">
+    <div data-sal="slide-down"
+         data-sal-duration="300"
+         data-sal-easing="ease-in-out"
+         class="img">
         <img src="images/scrum.svg"/>
     </div>
 </section>
 
 <section class="minisectionright">
-    <div class="img">
+    <div data-sal="fade-in"
+         data-sal-duration="600"
+         data-sal-easing="ease-in-out"
+         class="img">
         <img src="images/code.svg"/>
     </div>
-    <div class="text">
+    <div data-sal="fade-in"
+         data-sal-duration="600"
+         data-sal-easing="ease-in-out"
+         class="text">
         <h3>Yeah that's it...</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam commodi esse eum fugiat in maxime minima numquam omnis perspiciatis praesentium, repellendus. Deserunt error facilis fugiat, laudantium neque ullam velit.</p>
     </div>
@@ -61,7 +89,7 @@
 <script src="./node_modules/sal.js/dist/sal.js"></script>
 <script>
     sal({
-        threshold: 1,
+        threshold: 0.7,
         once: false,
     });
 </script>

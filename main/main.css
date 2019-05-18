@@ -31,13 +31,13 @@ p {
     color: #FFB7B7;
 }
 .minisectionright {
-    height: 60vh;
+    height: 40vh;
     display: grid;
     grid-template-columns: 50% 50%;
     padding-right: 150px;
 }
 .minisectionleft {
-    height: 60vh;
+    height: 40vh;
     display: grid;
     grid-template-columns: 50% 50%;
     padding-left: 150px;
